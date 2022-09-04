@@ -13,6 +13,7 @@ const doctorSchema = new Schema(
     doctor_tel: { type: String, require: true },
     hospital_addr: { type: String, require: true },
     hostpital_name: { type: String, require: true },
+    hospital_img: { type: String, require: true },
     lab_addr: { type: String, require: true },
     lab_name: { type: String, require: true },
     lab_postal_code: { type: String, require: true },
