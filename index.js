@@ -24,6 +24,9 @@ app.use('/v3/user', userRouter);
 const authRouter = require('./router/v3/auth/index.js');
 app.use('/v3/auth', authRouter);
 
+const doctorRouter = require('./router/v3/doctor/index');
+app.use('/v3/doctor', doctorRouter);
+
 app.get('/v3/test', (req, res) => {
   res.status(200).json({ response: { ok: { statusCode: 200, data: {} } } });
 });
